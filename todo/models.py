@@ -1,0 +1,8 @@
+from django.db import models
+
+class Task(models.Model):
+    # name of the item to add
+    name = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name
